@@ -6,7 +6,7 @@
 //
 
 import Foundation
-class EmployeeClass {
+class EmployeeClass1 {
     var name: String
     var age: Int
     
@@ -29,25 +29,25 @@ struct EmployeeStruct {
     }
 }
 
-class Company {
-    var employees: [EmployeeClass]
+class Company1 {
+    var employees: [EmployeeClass1]
     
-    init(employees: [EmployeeClass]) {
+    init(employees: [EmployeeClass1]) {
         self.employees = employees
     }
     
-    func addEmployee(employee: EmployeeClass) {
+    func addEmployee(employee: EmployeeClass1) {
         employees.append(employee)
     }
 }
 
-var companyClass = Company(employees: [])
+var companyClass = Company1(employees: [])
 for _ in 1...100000 {
-    let employee = EmployeeClass(name: "John Doe", age: 30)
+    let employee = EmployeeClass1(name: "John Doe", age: 30)
     companyClass.addEmployee(employee: employee)
 }
 
-var companyStruct = Company(employees: [])
+var companyStruct = Company1(employees: [])
 for _ in 1...100000 {
     var employee = EmployeeStruct(name: "John Doe", age: 30)
     employee.celebrateBirthday()

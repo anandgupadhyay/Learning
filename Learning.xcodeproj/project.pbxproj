@@ -15,6 +15,7 @@
 		1750C7CE2AECDAA100307A7D /* LearningUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1750C7CD2AECDAA100307A7D /* LearningUITests.swift */; };
 		1750C7D02AECDAA100307A7D /* LearningUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1750C7CF2AECDAA100307A7D /* LearningUITestsLaunchTests.swift */; };
 		1750C7DE2AECDB3200307A7D /* StructVsClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1750C7DD2AECDB3200307A7D /* StructVsClass.swift */; };
+		17A1AF992AECE532002DA28F /* ErrorHandlingInSwiftWithExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17A1AF982AECE532002DA28F /* ErrorHandlingInSwiftWithExample.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		1750C7CD2AECDAA100307A7D /* LearningUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearningUITests.swift; sourceTree = "<group>"; };
 		1750C7CF2AECDAA100307A7D /* LearningUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearningUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		1750C7DD2AECDB3200307A7D /* StructVsClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StructVsClass.swift; sourceTree = "<group>"; };
+		17A1AF982AECE532002DA28F /* ErrorHandlingInSwiftWithExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorHandlingInSwiftWithExample.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +99,7 @@
 		1750C7B02AECDA9F00307A7D /* Learning */ = {
 			isa = PBXGroup;
 			children = (
+				17A1AF972AECE51F002DA28F /* ErrorHandling */,
 				1750C7DC2AECDB1C00307A7D /* StructVsClass */,
 				1750C7B12AECDA9F00307A7D /* LearningApp.swift */,
 				1750C7B32AECDA9F00307A7D /* ContentView.swift */,
@@ -138,6 +141,14 @@
 				1750C7DD2AECDB3200307A7D /* StructVsClass.swift */,
 			);
 			path = StructVsClass;
+			sourceTree = "<group>";
+		};
+		17A1AF972AECE51F002DA28F /* ErrorHandling */ = {
+			isa = PBXGroup;
+			children = (
+				17A1AF982AECE532002DA28F /* ErrorHandlingInSwiftWithExample.swift */,
+			);
+			path = ErrorHandling;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -273,6 +284,7 @@
 				1750C7B42AECDA9F00307A7D /* ContentView.swift in Sources */,
 				1750C7DE2AECDB3200307A7D /* StructVsClass.swift in Sources */,
 				1750C7B22AECDA9F00307A7D /* LearningApp.swift in Sources */,
+				17A1AF992AECE532002DA28F /* ErrorHandlingInSwiftWithExample.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
