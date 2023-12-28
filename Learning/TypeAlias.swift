@@ -16,3 +16,9 @@
  let name:BusinessName = "Simmy's Cacke Plaza"
 
  */
+
+
+//    typealias Square = (h:Int,w:Int)
+
+//    let pillow = Square(h: 10, w:10)
+//    let tv = Square(h: 42.5, w:52.5)//Cannot convert value of type '(h: Double, w: Double)' to specified type 'NewPocketView.Square' (aka '(h: Int, w: Int)')
