@@ -51,9 +51,9 @@ class Company {
 
 // Sample usage
 let employees = [
-    Employee(id: 1, name: "Alice", jobTitle: "Developer", salary: 60000, targetsMet: true),
-    Employee(id: 2, name: "Bob", jobTitle: "Designer", salary: 55000, targetsMet: false),
-    Employee(id: 3, name: "Charlie", jobTitle: "Manager", salary: 75000, targetsMet: true)
+    Employee(id: 1, name: "Mac", jobTitle: "Developer", salary: 60000, targetsMet: true),
+    Employee(id: 2, name: "Shabeer", jobTitle: "Designer", salary: 55000, targetsMet: false),
+    Employee(id: 3, name: "Ghandol", jobTitle: "Manager", salary: 75000, targetsMet: true)
 ]
 
 let company = Company(employees: employees)
