@@ -41,15 +41,16 @@ class Company1 {
     }
 }
 
-var companyClass = Company1(employees: [])
-for _ in 1...100000 {
-    let employee = EmployeeClass1(name: "John Doe", age: 30)
-    companyClass.addEmployee(employee: employee)
-}
 
-var companyStruct = Company1(employees: [])
-for _ in 1...100000 {
-    var employee = EmployeeStruct(name: "John Doe", age: 30)
-    employee.celebrateBirthday()
-    companyStruct.employees.append(employee)
-}
+//var companyClass = Company1(employees: [])
+//for _ in 1...100000 {
+//    let employee = EmployeeClass1(name: "John Doe", age: 30)
+//    companyClass.addEmployee(employee: employee)
+//}
+//
+//var companyStruct = Company1(employees: [])
+//for _ in 1...100000 {
+//    var employee = EmployeeStruct(name: "John Doe", age: 30)
+//    employee.celebrateBirthday()
+//    companyStruct.employees.append(employee)
+//}
