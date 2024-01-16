@@ -34,6 +34,7 @@ class Company1 {
     
     init(employees: [EmployeeClass1]) {
         self.employees = employees
+        
     }
     
     func addEmployee(employee: EmployeeClass1) {
@@ -54,3 +55,23 @@ class Company1 {
 //    employee.celebrateBirthday()
 //    companyStruct.employees.append(employee)
 //}
+
+
+class someclass{
+    
+    init(){
+        var counter = Counter()
+//        Task.detached{
+            print(counter.increment())
+//        }
+    }
+}
+
+struct Counter{
+    var Value = 0
+    mutating func increment() -> Int{
+     Value = Value + 1
+        return Value
+    }
+}
+
