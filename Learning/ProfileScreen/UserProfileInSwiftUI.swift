@@ -4,7 +4,7 @@
 //  Learning
 //
 //  Created by Anand Upadhyay on 16/01/24.
-//
+// https://gist.github.com/lucaswkuipers/8d63c47ac9ddf6584d9a7fa6e1df0846
 
 import Foundation
 import SwiftUI
@@ -209,7 +209,21 @@ struct ProfileView: View {
 extension Profile {
     static var standard: Profile {
         Profile(
-            
+            name: "Lucas Kuipers",
+                        headline: """
+            Senior iOS Developer 
+            SwiftUI & UIKit | iOS, macOS, visionOS, iPadOs, watchOS & tvOS
+            """,
+                        backgroundPhoto: Image("Cover"),
+                        profilePhoto: Image("face"),
+                        topVoice: "iOS Developer and Product Engineer",
+                        isVerified: true,
+                        contentCreatorTopics: ["iOS", "Mac", "Swift", "UIKit", "SwiftUI" ,"Flutter"],
+                        education: "Software Technologies Ltd.",
+                        location: "Nairobi, Kenya",
+                        customButton: CustomButton(title: "Github", url: URL(string: "https://github.com/anandgupadhyay")!),
+                        numberOfFollowers: 5,
+                        numberOfConnections: 7
         )
     }
 }
