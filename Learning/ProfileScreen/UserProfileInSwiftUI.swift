@@ -170,7 +170,7 @@ struct ProfileView: View {
                     Button {
                         // ...
                     } label: {
-                        Label("Follow", systemImage: "plus")
+                        Label("Add", systemImage: "plus")
                             .frame(maxWidth: .infinity)
                             .frame(height: 35)
                             .background(.link)
@@ -182,7 +182,7 @@ struct ProfileView: View {
                     Button {
                         // ...
                     } label: {
-                        Label("Message", systemImage: "paperplane.fill")
+                        Label("Connect", systemImage: "paperplane.fill")
                             .frame(maxWidth: .infinity)
                             .frame(height: 35)
                             .foregroundStyle(.link)
