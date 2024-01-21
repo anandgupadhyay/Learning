@@ -209,11 +209,8 @@ struct ProfileView: View {
 extension Profile {
     static var standard: Profile {
         Profile(
-            name: "Lucas Kuipers",
-                        headline: """
-            Senior iOS Developer 
-            SwiftUI & UIKit | iOS, macOS, visionOS, iPadOs, watchOS & tvOS
-            """,
+            name: "Anand Upadhyay",
+            headline: "Senior iOS Developer ",
                         backgroundPhoto: Image("Cover"),
                         profilePhoto: Image("face"),
                         topVoice: "iOS Developer and Product Engineer",
