@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		17235CBC2B5DD67C00969A9E /* HackerRankSolutions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17235CBB2B5DD67C00969A9E /* HackerRankSolutions.swift */; };
 		1750C7B22AECDA9F00307A7D /* LearningApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1750C7B12AECDA9F00307A7D /* LearningApp.swift */; };
 		1750C7B42AECDA9F00307A7D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1750C7B32AECDA9F00307A7D /* ContentView.swift */; };
 		1750C7B62AECDAA100307A7D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1750C7B52AECDAA100307A7D /* Assets.xcassets */; };
@@ -37,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		17235CBB2B5DD67C00969A9E /* HackerRankSolutions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HackerRankSolutions.swift; sourceTree = "<group>"; };
 		1750C7AE2AECDA9F00307A7D /* Learning.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Learning.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1750C7B12AECDA9F00307A7D /* LearningApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearningApp.swift; sourceTree = "<group>"; };
 		1750C7B32AECDA9F00307A7D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -78,6 +80,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		17235CBA2B5DD66A00969A9E /* OtherLearning */ = {
+			isa = PBXGroup;
+			children = (
+				17235CBB2B5DD67C00969A9E /* HackerRankSolutions.swift */,
+			);
+			path = OtherLearning;
+			sourceTree = "<group>";
+		};
 		1750C7A52AECDA9F00307A7D = {
 			isa = PBXGroup;
 			children = (
@@ -101,6 +111,7 @@
 		1750C7B02AECDA9F00307A7D /* Learning */ = {
 			isa = PBXGroup;
 			children = (
+				17235CBA2B5DD66A00969A9E /* OtherLearning */,
 				17C4E80D2B5658C600A4B8AC /* ProfileScreen */,
 				17A1AF972AECE51F002DA28F /* ErrorHandling */,
 				1750C7DC2AECDB1C00307A7D /* StructVsClass */,
@@ -296,6 +307,7 @@
 				1750C7DE2AECDB3200307A7D /* StructVsClass.swift in Sources */,
 				1750C7B22AECDA9F00307A7D /* LearningApp.swift in Sources */,
 				17A1AF992AECE532002DA28F /* ErrorHandlingInSwiftWithExample.swift in Sources */,
+				17235CBC2B5DD67C00969A9E /* HackerRankSolutions.swift in Sources */,
 				17C4E80F2B5658DC00A4B8AC /* UserProfileInSwiftUI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
