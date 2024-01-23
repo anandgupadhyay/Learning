@@ -45,12 +45,12 @@ extension Profile {
     }
 
     var numberOfConnectionsDescription: String {
-        "\(min(numberOfConnections, 500))\(numberOfConnections > 500 ? "+" : "") connection\(numberOfConnections == 1 ? "" : "s")"
+        "\(min(numberOfConnections, 500))\(numberOfConnections > 500 ? "+" : "") likes\(numberOfConnections == 1 ? "" : "s")"
     }
 
     var numberOfFollowersDescription: String? {
         guard let numberOfFollowers else { return nil }
-        return "\(numberOfFollowers.formatted(.number)) follower\(numberOfFollowers == 1 ? "" : "s")"
+        return "\(numberOfFollowers.formatted(.number)) shares\(numberOfFollowers == 1 ? "" : "s")"
     }
 }
 

@@ -9,7 +9,7 @@ import Foundation
 
 /*
  Given a string of lowercase letters in the range ascii[a-z], determine the index of a character that can be removed to make the string a palindrome. There may be more than one solution, but any will do. If the word is already a palindrome or there is no solution, return -1. Otherwise, return the index of a character to remove.
- */
+ 
 func palindromeIndex(s: String) -> Int {
     let chars = Array(s)
     let length = s.count
@@ -54,4 +54,5 @@ func palindromeIndex(s: String) -> Int {
 // Example usage:
 let result = palindromeIndex(s: "abca")
 print(result) // Output: 1
+ */
 
