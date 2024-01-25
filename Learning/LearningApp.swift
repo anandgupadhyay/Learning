@@ -22,4 +22,17 @@ struct LearningApp: App {
 
  // Prints `false`
  print(string1.lowercased() == string2.lowercased())
+ ======
+ let result = string1.compare(string2, options: [.caseInsensitive, .diacriticInsensitive])
+ if result == .orderedSame {
+     print("The strings are considered equal.")
+ }
+ =====
+ let filenames = ["File10.txt", "file2.txt", "FILE1.txt"]
+ let sortedFilenames = filenames.sorted(
+     by: { $0.localizedStandardCompare($1) == .orderedAscending }
+ )
+
+ // Prints `["FILE1.txt", "file2.txt", "File10.txt"]`
+ print(sortedFilenames)
  */
