@@ -15,3 +15,11 @@ struct LearningApp: App {
         }
     }
 }
+
+/*
+ let string1 = "Fußball"
+ let string2 = "FUSSBALL"
+
+ // Prints `false`
+ print(string1.lowercased() == string2.lowercased())
+ */
