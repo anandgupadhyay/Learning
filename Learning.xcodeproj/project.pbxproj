@@ -17,6 +17,7 @@
 		1750C7D02AECDAA100307A7D /* LearningUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1750C7CF2AECDAA100307A7D /* LearningUITestsLaunchTests.swift */; };
 		1750C7DE2AECDB3200307A7D /* StructVsClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1750C7DD2AECDB3200307A7D /* StructVsClass.swift */; };
 		17A1AF992AECE532002DA28F /* ErrorHandlingInSwiftWithExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17A1AF982AECE532002DA28F /* ErrorHandlingInSwiftWithExample.swift */; };
+		17AFB87B2B750DCB00ED2E57 /* staticpropertyexample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17AFB87A2B750DCB00ED2E57 /* staticpropertyexample.swift */; };
 		17C4E80F2B5658DC00A4B8AC /* UserProfileInSwiftUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17C4E80E2B5658DC00A4B8AC /* UserProfileInSwiftUI.swift */; };
 /* End PBXBuildFile section */
 
@@ -52,6 +53,7 @@
 		1750C7CF2AECDAA100307A7D /* LearningUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearningUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		1750C7DD2AECDB3200307A7D /* StructVsClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StructVsClass.swift; sourceTree = "<group>"; };
 		17A1AF982AECE532002DA28F /* ErrorHandlingInSwiftWithExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorHandlingInSwiftWithExample.swift; sourceTree = "<group>"; };
+		17AFB87A2B750DCB00ED2E57 /* staticpropertyexample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = staticpropertyexample.swift; sourceTree = "<group>"; };
 		17C4E80E2B5658DC00A4B8AC /* UserProfileInSwiftUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileInSwiftUI.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -111,6 +113,7 @@
 		1750C7B02AECDA9F00307A7D /* Learning */ = {
 			isa = PBXGroup;
 			children = (
+				17AFB8792B750DB300ED2E57 /* StaticProperty */,
 				17235CBA2B5DD66A00969A9E /* OtherLearning */,
 				17C4E80D2B5658C600A4B8AC /* ProfileScreen */,
 				17A1AF972AECE51F002DA28F /* ErrorHandling */,
@@ -163,6 +166,14 @@
 				17A1AF982AECE532002DA28F /* ErrorHandlingInSwiftWithExample.swift */,
 			);
 			path = ErrorHandling;
+			sourceTree = "<group>";
+		};
+		17AFB8792B750DB300ED2E57 /* StaticProperty */ = {
+			isa = PBXGroup;
+			children = (
+				17AFB87A2B750DCB00ED2E57 /* staticpropertyexample.swift */,
+			);
+			path = StaticProperty;
 			sourceTree = "<group>";
 		};
 		17C4E80D2B5658C600A4B8AC /* ProfileScreen */ = {
@@ -309,6 +320,7 @@
 				17A1AF992AECE532002DA28F /* ErrorHandlingInSwiftWithExample.swift in Sources */,
 				17235CBC2B5DD67C00969A9E /* HackerRankSolutions.swift in Sources */,
 				17C4E80F2B5658DC00A4B8AC /* UserProfileInSwiftUI.swift in Sources */,
+				17AFB87B2B750DCB00ED2E57 /* staticpropertyexample.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
