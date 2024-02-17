@@ -16,7 +16,8 @@ class enumTest{
         case clubs = "♣"
     }
     
-    func enumTests(enumval: Suit){
+    
+    func oldWay(enumval: Suit) -> String{
         // Before
         let localVariable: String
         switch enumval {
@@ -27,9 +28,12 @@ class enumTest{
         default:
             localVariable = "other"
         }
-        
+        return localVariable
+    }
+    
+    func newWay(enumval: Suit)-> String{
         // Now
-        let localVariable = switch enumval {
+        return switch enumval {
         case .spades: "Spades"
         case .hearts: "Heart"
         case .clubs: "Clubs"
