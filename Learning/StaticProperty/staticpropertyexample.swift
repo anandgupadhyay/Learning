@@ -6,6 +6,64 @@
 //
 
 import Foundation
+
+// Example illustrating the Dry principle in Swift 5.7
+//This Swift 5.7 example demonstrates the Dry principle using reusable functions, extensions, generics, and protocols with protocol extensions to avoid repetition, thereby promoting code efficiency and maintainability.
+// Reusable Functions
+func greet(name: String) {
+    print("Hello, \(name)!")
+}
+
+greet(name: "Alice")
+greet(name: "Bob")
+
+// Extensions
+extension Int {
+    func squared() -> Int {
+        return self * self
+    }
+}
+
+let number = 5
+print("Square of \(number) is \(number.squared())")
+
+// Generics
+func swapValues<T>(_ a: inout T, _ b: inout T) {
+    let temp = a
+    a = b
+    b = temp
+}
+
+var x = 10
+var y = 20
+swapValues(&x, &y)
+print("After swapping, x = \(x), y = \(y)")
+
+// Protocols and Protocol Extensions
+protocol Drawable {
+    func draw()
+}
+
+extension Drawable {
+    func draw() {
+        print("Drawing...")
+    }
+}
+
+struct Circle: Drawable {
+    // Implementations specific to Circle
+}
+
+struct Square: Drawable {
+    // Implementations specific to Square
+}
+
+let circle = Circle()
+let square = Square()
+
+circle.draw()
+square.draw()
+                                                    
 class enumTest{
     // enums
     //My favorites way of using enums are using them with associated values, and computed variables to achieve the clean code level I am aiming to. But there can also be a situation when based on the switch result on the enum, we want to store it in some local variable. Previously, we needed to firstly initialize that value, and then to the switch to assign it. Now, it can all be done in a single expression 🚀
