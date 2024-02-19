@@ -14,8 +14,8 @@ func greet(name: String) {
     print("Hello, \(name)!")
 }
 
-greet(name: "Alice")
-greet(name: "Bob")
+//greet(name: "Alice")
+//greet(name: "Bob")
 
 // Extensions
 extension Int {
@@ -25,7 +25,7 @@ extension Int {
 }
 
 let number = 5
-print("Square of \(number) is \(number.squared())")
+//print("Square of \(number) is \(number.squared())")
 
 // Generics
 func swapValues<T>(_ a: inout T, _ b: inout T) {
@@ -37,7 +37,7 @@ func swapValues<T>(_ a: inout T, _ b: inout T) {
 var x = 10
 var y = 20
 swapValues(&x, &y)
-print("After swapping, x = \(x), y = \(y)")
+//print("After swapping, x = \(x), y = \(y)")
 
 // Protocols and Protocol Extensions
 protocol Drawable {
@@ -61,8 +61,8 @@ struct Square: Drawable {
 let circle = Circle()
 let square = Square()
 
-circle.draw()
-square.draw()
+//circle.draw()
+//square.draw()
                                                     
 class enumTest{
     // enums
