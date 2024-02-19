@@ -64,41 +64,41 @@ let square = Square()
 //circle.draw()
 //square.draw()
                                                     
-class enumTest{
-    // enums
-    //My favorites way of using enums are using them with associated values, and computed variables to achieve the clean code level I am aiming to. But there can also be a situation when based on the switch result on the enum, we want to store it in some local variable. Previously, we needed to firstly initialize that value, and then to the switch to assign it. Now, it can all be done in a single expression 🚀
-    enum Suit: String {
-        case spades = "♠"
-        case hearts = "♥"
-        case diamonds = "♦"
-        case clubs = "♣"
-    }
-    
-    
-    func oldWay(enumval: Suit) -> String{
-        // Before
-        let localVariable: String
-        switch enumval {
-        case .spades:
-            localVariable = "Spade"
-        case .hearts:
-            localVariable = "hearts"
-        default:
-            localVariable = "other"
-        }
-        return localVariable
-    }
-    
-    func newWay(enumval: Suit)-> String{
-        // Now
-        return switch enumval {
-        case .spades: "Spades"
-        case .hearts: "Heart"
-        case .clubs: "Clubs"
-        case .diamonds: "Dimonds"
-        }
-    }
-}
+//class enumTest{
+//    // enums
+//    //My favorites way of using enums are using them with associated values, and computed variables to achieve the clean code level I am aiming to. But there can also be a situation when based on the switch result on the enum, we want to store it in some local variable. Previously, we needed to firstly initialize that value, and then to the switch to assign it. Now, it can all be done in a single expression 🚀
+//    enum Suit: String {
+//        case spades = "♠"
+//        case hearts = "♥"
+//        case diamonds = "♦"
+//        case clubs = "♣"
+//    }
+//    
+//    
+//    func oldWay(enumval: Suit) -> String{
+//        // Before
+//        let localVariable: String
+//        switch enumval {
+//        case .spades:
+//            localVariable = "Spade"
+//        case .hearts:
+//            localVariable = "hearts"
+//        default:
+//            localVariable = "other"
+//        }
+//        return localVariable
+//    }
+//    
+//    func newWay(enumval: Suit)-> String{
+//        // Now
+//        return switch enumval {
+//        case .spades: "Spades"
+//        case .hearts: "Heart"
+//        case .clubs: "Clubs"
+//        case .diamonds: "Dimonds"
+//        }
+//    }
+//}
 //Let's delve into a detailed example of static variables and their usage, alongside a real-life scenario involving lazy variables in the context of an employee company case.
 //
 //Static Variables:
