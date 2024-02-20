@@ -7,59 +7,78 @@
 
 import Foundation
 
+let result = if Bool.random() { 0 } else { 1 }
+
+Nice! But the feature has a limitation. When you use the ternary operator, you can place the whole expression in parentheses and then continue using the result.
+
+let result = (Bool.random() ? 0 : 1) * 5
+
+But you can't do the same using if/switch statements as expressions.
+
+I have an easy trick to solve the limitation! The Value function!
+
+func Value<T>(_ result: () -> T) -> T { result() }
+
+Now, you can place your statement inside Value's closure, and it will return the inferred Value you can continue working with.
+
+let result = Value { if Bool.random() { 0 } else { 1 } } * 5
+
+It is an easy trick, but so useful!
+
+
 // Example illustrating the Dry principle in Swift 5.7
 //This Swift 5.7 example demonstrates the Dry principle using reusable functions, extensions, generics, and protocols with protocol extensions to avoid repetition, thereby promoting code efficiency and maintainability.
 // Reusable Functions
-func greet(name: String) {
-    print("Hello, \(name)!")
-}
-
-//greet(name: "Alice")
-//greet(name: "Bob")
-
-// Extensions
-extension Int {
-    func squared() -> Int {
-        return self * self
-    }
-}
-
-let number = 5
-//print("Square of \(number) is \(number.squared())")
-
-// Generics
-func swapValues<T>(_ a: inout T, _ b: inout T) {
-    let temp = a
-    a = b
-    b = temp
-}
-
-var x = 10
-var y = 20
-swapValues(&x, &y)
-//print("After swapping, x = \(x), y = \(y)")
-
-// Protocols and Protocol Extensions
-protocol Drawable {
-    func draw()
-}
-
-extension Drawable {
-    func draw() {
-        print("Drawing...")
-    }
-}
-
-struct Circle: Drawable {
-    // Implementations specific to Circle
-}
-
-struct Square: Drawable {
-    // Implementations specific to Square
-}
-
-let circle = Circle()
-let square = Square()
+//func greet(name: String) {
+//    print("Hello, \(name)!")
+//}
+//
+////greet(name: "Alice")
+////greet(name: "Bob")
+//
+//// Extensions
+//extension Int {
+//    func squared() -> Int {
+//        return self * self
+//    }
+//}
+//
+//let number = 5
+////print("Square of \(number) is \(number.squared())")
+//
+//// Generics
+//func swapValues<T>(_ a: inout T, _ b: inout T) {
+//    let temp = a
+//    a = b
+//    b = temp
+//}
+//
+//var x = 10
+//var y = 20
+//swapValues(&x, &y)
+////print("After swapping, x = \(x), y = \(y)")
+//
+//// Protocols and Protocol Extensions
+//protocol Drawable {
+//    func draw()
+//}
+//
+//extension Drawable {
+//    func draw() {
+//        print("Drawing...")
+//    }
+//}
+//
+//struct Circle: Drawable {
+//    // Implementations specific to Circle
+//}
+//
+//struct Square: Drawable {
+//    // Implementations specific to Square
+//}
+//
+//let circle = Circle()
+//let square = Square()
 
 //circle.draw()
 //square.draw()
