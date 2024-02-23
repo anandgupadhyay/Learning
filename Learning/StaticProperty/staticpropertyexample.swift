@@ -7,6 +7,31 @@
 
 import Foundation
 
+//Extensions in Swift
+
+struct Person {
+    let firstName: String
+    let lastName: String
+}
+//You can create an extension for this structure and add a fullName property:
+
+extension Person {
+    var fullName: String {
+        firstName + " " + lastName
+    }
+}
+//In this case, we have access to the source code of the Person structure, so we could also decide to define the fullName computed property inside the struct itself:
+
+struct Person {
+    let firstName: String
+    let lastName: String
+    
+    var fullName: String {
+        firstName + " " + lastName
+        
+    }
+}
+
 /*
  Using if and Switch 
 let result = if Bool.random() { 0 } else { 1 }
