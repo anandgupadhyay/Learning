@@ -9,10 +9,10 @@ import Foundation
 
 //Extensions in Swift
 
-struct Person {
-    let firstName: String
-    let lastName: String
-}
+//struct Person {
+//    let firstName: String
+//    let lastName: String
+//}
 //You can create an extension for this structure and add a fullName property:
 
 //extension Person {
