@@ -9,22 +9,22 @@ import Foundation
 
 //New Way to throw Errors from Function
 //This is an example of how it will look like:
-class ParseError : Error{
-    
-}
-
-func parseRecord(from string: String) throws(ParseError) -> Any {
-    throw ParseError()
-    return "ALl Good"
-}
-
-
-//So then when you use the function from above it will inherently know the type of error in the catch block:
-do {
-let record = try parseRecord(from: myString)
-} catch {
-// error has type ParseError
-}
+//class ParseError : Error{
+//    
+//}
+//
+//func parseRecord(from string: String) throws(ParseError) -> Any {
+//    throw ParseError()
+//    return "ALl Good"
+//}
+//
+//
+////So then when you use the function from above it will inherently know the type of error in the catch block:
+//do {
+//let record = try parseRecord(from: myString)
+//} catch {
+//// error has type ParseError
+//}
 
 //Extensions in Swift
 
