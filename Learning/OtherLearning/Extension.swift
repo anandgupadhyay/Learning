@@ -6,6 +6,9 @@
 //
 
 import Foundation
+import UIKit
+
+
 //https://www.hackingwithswift.com/articles/237/complete-guide-to-sf-symbols
 extension NSMutableAttributedString {
     var fontSize:CGFloat { return 14 }
@@ -69,16 +72,21 @@ extension NSMutableAttributedString {
         return self
     }
 }
-Note: If compiler is missing UIFont/UIColor, replace them with NSFont/NSColor.
+//Note: If compiler is missing UIFont/UIColor, replace them with NSFont/NSColor.
 
 
-How to Use :  let label = UILabel()
-label.attributedText =
-    NSMutableAttributedString()
-        .bold("Address: ")
-        .normal(" Kathmandu, Nepal\n\n")
-        .orangeHighlight(" Email: ")
-        .blackHighlight(" prajeet.shrestha@gmail.com ")
-        .bold("\n\nCopyright: ")
-        .underlined(" All rights reserved. 2020.")
- 
+//How to Use :  
+
+class Test{
+    func testExtension(){
+        let label = UILabel()
+        label.attributedText =
+        NSMutableAttributedString()
+            .bold("Address: ")
+            .normal(" Kathmandu, Nepal\n\n")
+            .orangeHighlight(" Email: ")
+            .blackHighlight(" prajeet.shrestha@gmail.com ")
+            .bold("\n\nCopyright: ")
+            .underlined(" All rights reserved. 2020.")
+    }
+}
