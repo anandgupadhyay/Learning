@@ -7,8 +7,8 @@
 
 import Foundation
 import UIKit
-
-//The general form for making and setting an attributed string is like this. You can find other common options below.
+/*
+The general form for making and setting an attributed string is like this. You can find other common options below.
 // create attributed string
 let myString = "Swift Attributed String"
 let myAttribute = [ NSAttributedString.Key.foregroundColor: UIColor.blue ]
@@ -119,3 +119,4 @@ Related
 Further Reading
 * How to retrieve the attributes from a tap location
 * Attributed String Programming Guide (very informative but unfortunately only in Objective-C)
+*/
