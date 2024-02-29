@@ -16,6 +16,7 @@
 		1750C7CE2AECDAA100307A7D /* LearningUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1750C7CD2AECDAA100307A7D /* LearningUITests.swift */; };
 		1750C7D02AECDAA100307A7D /* LearningUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1750C7CF2AECDAA100307A7D /* LearningUITestsLaunchTests.swift */; };
 		1750C7DE2AECDB3200307A7D /* StructVsClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1750C7DD2AECDB3200307A7D /* StructVsClass.swift */; };
+		177A96342B903B1E00E5D40F /* AttributedString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177A96332B903B1E00E5D40F /* AttributedString.swift */; };
 		179A0A192B8D95FC005C96B8 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 179A0A182B8D95FC005C96B8 /* Extension.swift */; };
 		17A1AF992AECE532002DA28F /* ErrorHandlingInSwiftWithExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17A1AF982AECE532002DA28F /* ErrorHandlingInSwiftWithExample.swift */; };
 		17AFB87B2B750DCB00ED2E57 /* staticpropertyexample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17AFB87A2B750DCB00ED2E57 /* staticpropertyexample.swift */; };
@@ -53,6 +54,7 @@
 		1750C7CD2AECDAA100307A7D /* LearningUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearningUITests.swift; sourceTree = "<group>"; };
 		1750C7CF2AECDAA100307A7D /* LearningUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearningUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		1750C7DD2AECDB3200307A7D /* StructVsClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StructVsClass.swift; sourceTree = "<group>"; };
+		177A96332B903B1E00E5D40F /* AttributedString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttributedString.swift; sourceTree = "<group>"; };
 		179A0A182B8D95FC005C96B8 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 		17A1AF982AECE532002DA28F /* ErrorHandlingInSwiftWithExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorHandlingInSwiftWithExample.swift; sourceTree = "<group>"; };
 		17AFB87A2B750DCB00ED2E57 /* staticpropertyexample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = staticpropertyexample.swift; sourceTree = "<group>"; };
@@ -89,6 +91,7 @@
 			children = (
 				17235CBB2B5DD67C00969A9E /* HackerRankSolutions.swift */,
 				179A0A182B8D95FC005C96B8 /* Extension.swift */,
+				177A96332B903B1E00E5D40F /* AttributedString.swift */,
 			);
 			path = OtherLearning;
 			sourceTree = "<group>";
@@ -317,6 +320,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				177A96342B903B1E00E5D40F /* AttributedString.swift in Sources */,
 				1750C7B42AECDA9F00307A7D /* ContentView.swift in Sources */,
 				1750C7DE2AECDB3200307A7D /* StructVsClass.swift in Sources */,
 				1750C7B22AECDA9F00307A7D /* LearningApp.swift in Sources */,
