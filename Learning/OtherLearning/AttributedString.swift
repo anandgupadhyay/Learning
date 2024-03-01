@@ -8,12 +8,12 @@
 import Foundation
 import UIKit
 
-
-How To Add Third Party Library acknowledgement
-Third-party libraries acknowledgments using a Settings bundle
-Third-party libraries help developers build apps faster but often come with a license. The MIT license is likely the most common, but there are many others that, together, require you to acknowledge the usage of the library in return for getting free access.
-
-I’m not going to dive deep into the details of each license type, but I will explain how you can add acknowledgments inside your app without much effort. We will use a Settings bundle to move all acknowledgments to the system settings level, not distracting regular usage inside your app.
+https://www.avanderlee.com/workflow/third-party-libraries-acknowledgments-swift-packages/
+//How To Add Third Party Library acknowledgement
+//Third-party libraries acknowledgments using a Settings bundle
+//Third-party libraries help developers build apps faster but often come with a license. The MIT license is likely the most common, but there are many others that, together, require you to acknowledge the usage of the library in return for getting free access.
+//
+//I’m not going to dive deep into the details of each license type, but I will explain how you can add acknowledgments inside your app without much effort. We will use a Settings bundle to move all acknowledgments to the system settings level, not distracting regular usage inside your app.
 
 /*
 The general form for making and setting an attributed string is like this. You can find other common options below.
