@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-https://www.avanderlee.com/workflow/third-party-libraries-acknowledgments-swift-packages/
+//https:www.avanderlee.com/workflow/third-party-libraries-acknowledgments-swift-packages/
 //How To Add Third Party Library acknowledgement
 //Third-party libraries acknowledgments using a Settings bundle
 //Third-party libraries help developers build apps faster but often come with a license. The MIT license is likely the most common, but there are many others that, together, require you to acknowledge the usage of the library in return for getting free access.
