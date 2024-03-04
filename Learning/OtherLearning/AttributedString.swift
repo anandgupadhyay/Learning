@@ -8,10 +8,10 @@
 import Foundation
 import UIKit
 // Dynamic Type feature
-What is the Dynamic Type feature?
-The Dynamic Type feature allows users to adjust the size of textual content on both the app and system levels. It’s part of the accessibility features family and accommodates users requiring larger text for readability. It also offers smaller text sizes for those users that can handle it, allowing for more content to be visible on screen.
+//What is the Dynamic Type feature?
+//The Dynamic Type feature allows users to adjust the size of textual content on both the app and system levels. It’s part of the accessibility features family and accommodates users requiring larger text for readability. It also offers smaller text sizes for those users that can handle it, allowing for more content to be visible on screen.
+//You can find the setting by going into the Settings app → Accessibility → Display & Text Size → Larger Text:
 
-You can find the setting by going into the Settings app → Accessibility → Display & Text Size → Larger Text:
 
 //https:www.avanderlee.com/workflow/third-party-libraries-acknowledgments-swift-packages/
 //How To Add Third Party Library acknowledgement
