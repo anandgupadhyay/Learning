@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>NSPrivacyAccessedAPITypes</key>
+	<array>
+		<dict>
+			<key>NSPrivacyAccessedAPIType</key>
+			<string>NSPrivacyCollectedDataTypeCrashData</string>
+			<key>NSPrivacyAccessedAPITypeReasons</key>
+			<array>
+				<string>For App Perfromance monitoring used by Google Analytics and Firebase Crash ytics </string>
+			</array>
+		</dict>
+		<dict>
+			<key>NSPrivacyAccessedAPIType</key>
+			<string>NSPrivacyCollectedDataTypeOtherUserContent</string>
+			<key>NSPrivacyAccessedAPITypeReasons</key>
+			<array>
+				<string>For App Functionality </string>
+			</array>
+		</dict>
+		<dict>
+			<key>NSPrivacyAccessedAPIType</key>
+			<string>NSPrivacyCollectedDataTypeAudioData</string>
+			<key>NSPrivacyAccessedAPITypeReasons</key>
+			<array>
+				<string>Document Annotations and other app features</string>
+			</array>
+		</dict>
+		<dict>
+			<key>NSPrivacyAccessedAPIType</key>
+			<string>NSPrivacyCollectedDataTypePhotosorVideos</string>
+			<key>NSPrivacyAccessedAPITypeReasons</key>
+			<array>
+				<string>Document Annotations and other app features</string>
+			</array>
+		</dict>
+		<dict>
+			<key>NSPrivacyAccessedAPIType</key>
+			<string>NSPrivacyCollectedDataTypeCoarseLocation
+
+</string>
+			<key>NSPrivacyAccessedAPITypeReasons</key>
+			<array>
+				<string>To provide Better App functionality</string>
+			</array>
+		</dict>
+		<dict>
+			<key>NSPrivacyAccessedAPIType</key>
+			<string>NSPrivacyAccessedAPICategoryUserDefaults</string>
+			<key>NSPrivacyAccessedAPITypeReasons</key>
+			<array>
+				<string>Manage User and App sepcific information</string>
+			</array>
+		</dict>
+	</array>
+</dict>
+</plist>

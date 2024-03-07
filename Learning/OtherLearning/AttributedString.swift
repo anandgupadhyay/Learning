@@ -7,6 +7,22 @@
 
 import Foundation
 import UIKit
+
+struct Cube {
+    let initialVolume: Int
+    private var dimensions: Int = 3
+    
+    init(_ side: Int) {
+        initialVolume = volume(for: side)
+    }
+    
+    func volume(for side: Int) -> Int {
+        return 0
+//        return Int(pow(side, dimensions))
+    }
+}
+
+    
 // Dynamic Type feature
 //What is the Dynamic Type feature?
 //The Dynamic Type feature allows users to adjust the size of textual content on both the app and system levels. It’s part of the accessibility features family and accommodates users requiring larger text for readability. It also offers smaller text sizes for those users that can handle it, allowing for more content to be visible on screen.
