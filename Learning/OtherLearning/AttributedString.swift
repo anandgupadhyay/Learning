@@ -8,19 +8,21 @@
 import Foundation
 import UIKit
 
-struct Cube {
-    let initialVolume: Int
-    private var dimensions: Int = 3
-    
-    init(_ side: Int) {
-        initialVolume = volume(for: side)
-    }
-    
-    func volume(for side: Int) -> Int {
-        return 0
-//        return Int(pow(side, dimensions))
-    }
-}
+
+
+//struct Cube {
+//    let initialVolume: Int
+//    private var dimensions: Int = 3
+//    
+//    init(_ side: Int) {
+//        initialVolume = volume(for: side)
+//    }
+//    
+//    func volume(for side: Int) -> Int {
+//        return 0
+////        return Int(pow(side, dimensions))
+//    }
+//}
 
     
 // Dynamic Type feature
