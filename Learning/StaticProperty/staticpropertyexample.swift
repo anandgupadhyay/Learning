@@ -7,6 +7,25 @@
 
 import Foundation
 
+func fetchSelectedPhotos () async → [Souvenir. Photo] {
+await withTaskGroup(of: Souvenir.Photo?.self) { group in
+var photos: [Souvenir.Photo] = []
+photos. reserveCapacity (selectedItems. count)
+for item in self. selectedItems {
+group. addTask {
+guard let data = try? await item. LoadTransferable(type: Data.self),
+let image = UIImage (data: data),
+let pngData = image. pngData(),
+let identifier = item itemIdentifier else { return nil
+let photo = Souvenir. Photo(id: identifier, data: pngData)
+return photo
+}
+｝
+for await result in group {
+guard let photo = result else { continue }
+photos. append (photo)
+return photos
+    
 //New Way to throw Errors from Function
 //This is an example of how it will look like:
 //class ParseError : Error{
