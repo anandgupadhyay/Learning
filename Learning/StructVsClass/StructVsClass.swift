@@ -5,6 +5,28 @@
 //  Created by Anand Upadhyay on 28/10/23.
 //
 
+// simplify working with value types in arrays you could use following extension (Swift 3):
+
+extension Array {
+    mutating func modifyForEach(_ body: (_ index: Index, _ element: inout Element) -> ()) {
+        for index in indices {
+            modifyElement(atIndex: index) { body(index, &$0) }
+        }
+    }
+
+    mutating func modifyElement(atIndex index: Index, _ modifyElement: (_ element: inout Element) -> ()) {
+        var element = self[index]
+        modifyElement(&element)
+        self[index] = element
+    }
+}
+Example usage:
+
+testings.modifyElement(atIndex: 0) { $0.value = 99 }
+testings.modifyForEach { $1.value *= 2 }
+testings.modifyForEach { $1.value = $0 }
+
+
 import Foundation
 class EmployeeClass1 {
     var name: String
