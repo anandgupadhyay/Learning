@@ -1,6 +1,35 @@
 import UIKit
 
 
+///Sum of Integers in an Array  having any values.
+
+let array: [Any?] = [1, 5, 3, 7, 3, nil, "abc"]
+
+func sumOfIntegers(in array: [Any?]) -> Int {
+    var sum = 0
+    for element in array {
+        if let intValue = element as? Int {
+            sum += intValue
+        } else if let stringValue = element as? String {
+            // Handle edge case for strings that represent numbers
+            if let intValue = Int(stringValue) {
+                sum += intValue
+            } else {
+                // Handle non-convertible strings gracefully
+                print("Warning: String '\(stringValue)' cannot be converted to an integer and will be ignored.")
+            }
+        } else if element != nil {
+            // Handle non-integer and non-nil elements gracefully
+            print("Warning: Element '\(element!)' is not an integer and will be ignored.")
+        }
+    }
+    return sum
+}
+
+let result = sumOfIntegers(in: array)
+print("Sum of integers in the array is: \(result)")
+
+
 //@objc protocol Drivable{
 //    
 //    @objc optional func drive()
