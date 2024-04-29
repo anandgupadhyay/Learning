@@ -29,6 +29,15 @@ func sumOfIntegers(in array: [Any?]) -> Int {
 let result = sumOfIntegers(in: array)
 print("Sum of integers in the array is: \(result)")
 
+// NOw the same using a higher order function
+let array: [Any?] = [1, 5, 3, 7, 3, nil, "abc"]
+
+func sumOfIntegers(in array: [Any?]) -> Int {
+    return array.compactMap { $0 as? Int ?? Int("\($0 ?? "")") }.reduce(0, +)
+}
+
+let result = sumOfIntegers(in: array)
+
 
 //@objc protocol Drivable{
 //    
