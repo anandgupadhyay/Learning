@@ -1,5 +1,10 @@
 //Add the group to the entitlements/capabilities.
 
+1. Go to the capabilities tab of the app's target
+2. Enable App Groups
+3. Create a new app group, entitled something appropriate. It must start with group..
+4. Let Xcode go through the process of creating this group for you.
+5. Save data to NSUserDefaults with group ID and use it in your extension.
 
 //From Apple's App Extension Guide :
 
