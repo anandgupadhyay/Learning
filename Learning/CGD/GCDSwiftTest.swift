@@ -4,3 +4,11 @@ let serialQ = DispatchQueue(label: "com.gcddemo.serialQ")
                 debugPrint("Index:\(i)")
             }
         }
+
+
+let concurrentQ = DispatchQueue(label: "com.gcddemo.serialQ",attributes: .concurrent)
+        serialQ.async {
+            for i in 0..<5{
+                debugPrint("Index:\(i)")
+            }
+        }
