@@ -8,7 +8,7 @@
         
         //concurrent queue
         let concurrentQ = DispatchQueue(label: "com.gcddemo.serialQ",attributes: .concurrent)
-        serialQ.async {
+        concurrentQ.async {
             for i in 0..<5{
                 debugPrint("Index:\(i)")
             }
@@ -21,4 +21,10 @@
                 //update UI
                 //this step is required to bring the exucution back to main thread
             }
+        }
+        
+        //to delay execution of certain task
+        let delay = DispatchTime.now() + .seconds(2)
+        DispatchQueue.main.asyncAfter(deadline: delay){
+          debugPrint("Delayed for 2 sec.")
         }
