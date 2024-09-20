@@ -84,3 +84,31 @@ struct ParentView: View {
 // Usage
 // let contentView = ParentView()
 // ContentView()
+
+
+import SwiftUI
+import Combine
+
+class CounterViewModel: ObservableObject {
+    @Published var count: Int = 0
+}
+
+struct CounterView: View {
+    @ObservedObject var viewModel: CounterViewModel
+
+    var body: some View {
+        VStack {
+            Text("Count: \(viewModel.count)")
+
+            Button("Increment") {
+                viewModel.count += 1
+            }
+        }
+        .padding()
+    }
+}
+
+// Usage
+// let viewModel = CounterViewModel()
+// let contentView = CounterView(viewModel: viewModel)
+// ContentView()
