@@ -8,11 +8,14 @@ struct User: Codable {
 }
 
 
-func removeDuplicateUsers(from users: [User]) -> [User] {
-    let predicate = Predicate<User> { user in
-        // Your filtering logic here
-        return user.userId != "duplicateUserId" // Example condition
+func removeDuplicateUser(from users: [User]) -> [User] {
+    var uniqueUserIds: Set<String> = []
+    return users.filter { user in
+        if uniqueUserIds.contains(user.userId) {
+            return false
+        } else {
+            uniqueUserIds.insert(user.userId)
+            return true
+        }
     }
-
-    return users.filter(predicate)
 }
