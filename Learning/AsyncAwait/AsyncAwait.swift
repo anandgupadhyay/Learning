@@ -15,8 +15,9 @@ struct ProfilePage {
     let recentPosts: [Post]
     let followerCount: Int
 }
-
-class ProfileService {
+{
+    
+    @available(iOS 16.0, *)
     func fetchUserProfile(userId: String) async throws -> ProfilePage {
         async let userInfo = fetchUserInfo(userId: userId)
         async let profileImage = fetchProfileImage(userId: userId)
@@ -27,27 +28,29 @@ class ProfileService {
     }
                               
                               
+    @available(iOS 16.0, *)
     private func fetchUserInfo(userId: String) async throws -> User {
         try await Task.sleep(for:.seconds(2))
     return User(id: userId, name: "Badusha", bio: "iOS Developer" )
     }
-    
+    @available(iOS 16.0, *)
     private func fetchProfileImage(userId: String) async throws -> UIImage {
         try await Task.sleep(for: .seconds(3))
         return UIImage(systemName: "person. circle. fill")!
     }
-    
+    @available(iOS 16.0, *)
     private func fetchRecentPosts(userId: String) async throws -> [Post] {
         try await Task.sleep(for: .seconds(2.5))
-        Post(id: "1", content: "Hello, SwiftUI!"),
-        Post(id: "2", content: "Async/await is Great!")
+        return [Post(id: "1", content: "Hello, SwiftUI!"),
+        Post(id: "2", content: "Async/await is Great!")]
     }
-    
+    @available(iOS 16.0, *)
     private func fetchFollowerCount (userId: String) async throws -> Int {
             try await Task.sleep(for: .seconds(1.5))
             return 1000
         }
     }
+
 // Usage
 //Task {
 //    try{
