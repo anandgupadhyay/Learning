@@ -22,7 +22,7 @@ struct ProfilePage {
         async let userInfo = fetchUserInfo(userId: userId)
         async let profileImage = fetchProfileImage(userId: userId)
         async let recentPosts = fetchRecentPosts(userId: userId)
-        async let followerCount = fetchFollowerCount (userId: userId) / Here's the magic: we await all operations at once!
+        async let followerCount = fetchFollowerCount (userId: userId) // Here's the magic: we await all operations at once!
         return try await ProfilePage( user: userInfo, profileImage: profileImage, recentPosts: recentPosts,
                                       followerCount: followerCount)
     }
