@@ -23,5 +23,23 @@ func updateCache() {
 }
 
 
-//===============================================//
+//============= Previously ==================//
+
+actor Cache<Key: Hashable, Value> {
+    private var _cache: [Key: Value] = [:]
+
+    func get(_ key: Key) -> Value? {
+        return _cache[key]
+    }
+
+    func set(_ key: Key, value: Value) {
+        _cache[key] = value
+    }
+}
+
+let cache = Cache<String, String>()
+
+func updateCache() async {
+    await cache.set("key", value: "value")
+}
 
