@@ -1,3 +1,19 @@
+//example where function return value but we are not using it
+final class UpdateNameViewController {
+    func didEnterName(_ name: String) {
+        /// The underscore makes the warning go away.
+        _ = APIProvider.updateName(name)
+    }
+}
+//However, having lots of underscore property names throughout your projects isn’t really clean too. Therefore, it’s better to use the @discardableResult keyword in front of your method definition:
+
+enum APIProvider {
+    @discardableResult static func updateName(_ name: String) -> Result<User, Error> {
+        // .. Handle API endpoint, example result:
+        return .success(User(name: name))
+    }
+}
+
 /*    Swift Typealias is used to provide a new name for an existing data type in the program. Once you create a typealias, you can use the aliased name instead of the exsisting name throughout the program.
  Typealias doesn't create a new data type, it simply provides a new name to the existing data type.
 
