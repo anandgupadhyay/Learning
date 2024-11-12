@@ -1,4 +1,11 @@
 //example where function return value but we are not using it
+enum APIProvider {
+    static func updateName(_ name: String) -> Result<User, Error> {
+        // .. Handle API endpoint, example result:
+        return .success(User(name: name))
+    }
+}
+
 final class UpdateNameViewController {
     func didEnterName(_ name: String) {
         /// The underscore makes the warning go away.
