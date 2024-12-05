@@ -2,22 +2,9 @@ import json
 
 # List of variable names and their corresponding strings
 variables = {
-    "BUY THEME": "BuyTheme",
-    "GET IT FOR FREE": "GetItForFree",
-    "ACTIVE THEME - CONFIGURE": "ConfigureThemeActive",
-    "CONFIGURE THEME": "ConfigureTheme",
-    "Apply Theme": "ApplyTheme",
-    "Search Card": "SearchCard",
-    "Sorry no alerts at this time.": "NoAlertMsg",
-    "Theme Store": "ThemeStoreTitle",
-    "You don't have camera": "NoCameraAccess",
-    "Pocket already available": "PocketAlreadyAvailable",
-    "Pocket name can not be empty!": "PocketNameCanNotBeEmpty",
-    "Add Card From URL": "AddCardFromURL",
-    "Bluetooth is turned off; this is needed for local notification. Click to Enable": "bluetoothText",
-    "Bluetooth is off in SETTINGS or \nCONTROL CENTER, needed for local notifications. Enable in SETTINGS and check the CONTROL CENTER": "bluetoothHardwaretext",
-    "Location is not ALWAYS enabled, this is needed for local Card alerts": "locationText",
-    "Bluetooth and GPS are not ALWAYS enabled; these are needed for local and GEO notification. Click to Enable": "locationAndBluetoothText",
+    "EnterNameMsg": "Enter Name",
+    "OkayTitle": "Okay",
+    "ThankYou" : "Thank you"
     # Add the rest of your variables here...
 }
 
