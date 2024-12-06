@@ -32,7 +32,7 @@ with open(output_file, "w") as file:
 
 print(f"Localization JSON file '{output_file}' created successfully!")
 
-
+/*
 Steps to Use on a Mac
 1. Install Python (if not already installed):
     * Open the Terminal.
@@ -51,5 +51,5 @@ Steps to Use on a Mac
 5. Check the Output:
     * The script will generate a localization.json file in the same directory as the script.
     * Open the localization.json file with any text editor or Xcode to review the content.
-
+*/
 
