@@ -1,3 +1,33 @@
+//Write a function to calculate sum of 0 to 5000000 in an memory and time efficient manner
+func addNumbersUsingDispatchQueue(range: ClosedRange<Int> = 0...500_000, completion: @escaping (Int) -> Void) {
+    let queue = DispatchQueue(label: "com.example.addition", attributes: .concurrent)
+    let group = DispatchGroup()
+    let chunkSize = 100000
+    var totalSum = 0
+
+    // Split the range into smaller chunks for concurrent processing
+    for start in stride(from: range.lowerBound, to: range.upperBound, by: chunkSize) {
+        let end = min(start + chunkSize - 1, range.upperBound)
+        group.enter()
+
+        queue.async {
+            let chunkSum = (start...end).reduce(0, +)
+            totalSum += chunkSum
+            group.leave()
+        }
+    }
+
+    // Notify completion once all tasks are done
+    group.notify(queue: .main) {
+        completion(totalSum)
+    }
+}
+
+// Usage
+addNumbersUsingDispatchQueue { result in
+    print("The total sum is: \(result)")
+}
+
 //serial queue
         let serialQ = DispatchQueue(label: "com.gcddemo.serialQ")
         serialQ.async {
