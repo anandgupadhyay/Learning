@@ -1,6 +1,6 @@
 //Write a function to calculate sum of 0 to 5000000 in an memory and time efficient manner
 func addNumbersUsingDispatchQueue(range: ClosedRange<Int> = 0...500_000, completion: @escaping (Int) -> Void) {
-    let queue = DispatchQueue(label: "com.example.addition", attributes: .concurrent)
+    let queue = DispatchQueue(label: "com.andrew.smartaddition", attributes: .concurrent)
     let group = DispatchGroup()
     let chunkSize = 100000
     var totalSum = 0
