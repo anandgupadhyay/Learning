@@ -7,6 +7,27 @@
 
 // simplify working with value types in arrays you could use following extension (Swift 3):
 
+//Struct and Class
+
+
+class Address {
+    var city: String
+
+    init(city: String) {
+        self.city = city
+    }
+}
+
+struct Person {
+    var name: String
+    var address: Address
+}
+
+var person1 = Person(name: "AT", address: Address(city: "Delhi"))
+var person2 = person1 // person2 now references the same address as person1
+
+person2.address.city = "Mumbai"
+
 extension Array {
     mutating func modifyForEach(_ body: (_ index: Index, _ element: inout Element) -> ()) {
         for index in indices {
@@ -20,11 +41,12 @@ extension Array {
         self[index] = element
     }
 }
-Example usage:
 
-testings.modifyElement(atIndex: 0) { $0.value = 99 }
-testings.modifyForEach { $1.value *= 2 }
-testings.modifyForEach { $1.value = $0 }
+
+
+//testings.modifyElement(atIndex: 0) { $0.value = 99 }
+//testings.modifyForEach { $1.value *= 2 }
+//testings.modifyForEach { $1.value = $0 }
 
 
 import Foundation
