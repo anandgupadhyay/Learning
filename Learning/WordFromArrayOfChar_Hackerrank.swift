@@ -8,8 +8,8 @@ class RandomNumberGenerator {
 }
 
 // Example usage
-let randomValue = RandomNumberGenerator.randomDouble(in: 0.5...5.0)
-print("Random Double: \(randomValue)")
+// let randomValue = RandomNumberGenerator.randomDouble(in: 0.5...5.0)
+// print("Random Double: \(randomValue)")
 
 ///Sum of Integers in an Array  having any values.
 
