@@ -1,6 +1,16 @@
 import UIKit
 
 
+class RandomNumberGenerator {
+    static func randomDouble(in range: ClosedRange<Double>) -> Double {
+        return Double.random(in: range)
+    }
+}
+
+// Example usage
+let randomValue = RandomNumberGenerator.randomDouble(in: 0.5...5.0)
+print("Random Double: \(randomValue)")
+
 ///Sum of Integers in an Array  having any values.
 
 let array: [Any?] = [1, 5, 3, 7, 3, nil, "abc"]
