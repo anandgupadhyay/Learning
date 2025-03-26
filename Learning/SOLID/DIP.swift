@@ -34,3 +34,13 @@ class NotificationService {
     }
 }
 
+//Step 4: Using the Notification Service
+et emailNotification = EmailNotification()
+let smsNotification = SMSNotification()
+
+let emailService = NotificationService(notification: emailNotification)
+emailService.notify(message: "Hello via Email!")
+
+let smsService = NotificationService(notification: smsNotification)
+smsService.notify(message: "Hello via SMS!")
+
