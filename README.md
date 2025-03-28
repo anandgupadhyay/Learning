@@ -1,54 +1,15 @@
-To Support Universal Links in iOS
-Need to host this content on the following url
-https://eboardweb.stl-horizon.com/.well-known/apple-app-site-association
-{
-    "applinks": {
-        "apps": [],
-        "details": [
-            {
-                "appID": "994834805.com.stl-horizon.eboard",
-                "paths": [
-                    “/stlebrd/*”,
-                    “/stlebrd”,
-		    “/openMeeting/*”, 		   “/openMeeting”	
-                ]
-            }
-        ]
-    }
-}
+You have set up a Custom URL Scheme (smartredirect), but Universal Links require Associated Domains.
 
-=====================
+This means your app expects links like smartredirect://openproduct/152244, which won't work with email deep links.
 
-Associated Domains in Xcode
-applinks:https://eboardweb.stl-horizon.com
-applinks:https://wwwstl-horizon.com 
-//for testing
-applinks:https://eboardweb.stl-horizon.com?mode=developer
-applinks:https://wwwstl-horizon.com ?mode=developer
+If your email link is https://yourdomain.com/smartredirect/openproduct/152244, this won't trigger the app.
 
+If you want Universal Links (Recommended), do the following:
 
-Url type role - None
-com.stl-horizon.eboard - stlebrd
-com.stl-horizon.eboard - https://eboardweb.stl-horizon.com/openMeeting
+Go to Xcode → Target → Signing & Capabilities → Add "Associated Domains".
 
+Add: applinks:yourdomain.com
 
-//this will be the url on Button in email Body
-https://eboardweb.stl-horizon.com/open-meeting?deep_link=https://eboardweb.stl-horizon.com/openMeeting/new-demo/2/88/452_MTN 
+Make sure your AASA file is hosted correctly.
 
-
-Refernces
-https://developer.apple.com/documentation/xcode/supporting-associated-domains 
-https://developer.apple.com/documentation/xcode/allowing-apps-and-websites-to-link-to-your-content/
-https://eboardweb.stl-horizon.com/openMeeeting/new-demo/2/47/12244_MTN
-
-
-=========================================
-
-
-applinks:*.stl-horizon.com
-applinks:eboard.stl-horizon.com?mode=developer
-applinks:https://web_eboard_tst.stl-horizon.com?mode=developer
-applinks:eboard.stl-horizon.com?mode=developer
-
- ==================================
-
+Handle deep links in application(_:continue:restorationHandler:) (AppDelegate).
