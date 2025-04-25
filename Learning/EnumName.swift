@@ -8,3 +8,15 @@ if let fruit = Fruit(rawValue: 1) {
     print(caseName)
 }
 
+//Another way
+enum MyEnum {
+    case firstCase
+    case secondCase
+    
+    var name: String {
+        switch self {
+        case .firstCase: return "firstCase"
+        case .secondCase: return "secondCase"
+        }
+    }
+}
