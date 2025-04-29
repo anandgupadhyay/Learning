@@ -1,3 +1,12 @@
+
+@objc enum Fruit: Int {
+}//This is correct 
+
+@objc enum City: String {
+}//This will give Error 
+
+
+
 enum Fruit: Int {
     case Orange = 1
     case Apple = 2
