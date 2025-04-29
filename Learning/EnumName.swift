@@ -5,6 +5,8 @@
 @objc enum City: String {
 }//This will give Error 
 
+//@obj can be used with Int type enum but can not be used with String or any other type cause in Objective C Enum can be only of Int type
+
 
 
 enum Fruit: Int {
