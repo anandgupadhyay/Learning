@@ -129,4 +129,22 @@ class ToastView: UIView {
     }
 }
 
+//How to Use
+//Toast Message
+extension AppDelegate{
+    func showToast(message: String,
+                   in parentView: UIView,
+                   backgroundColor: UIColor = .gray,
+                   textColor: UIColor = .black,
+                   font: UIFont = UIFont.fontWithStyle(.regular, size: 18),
+                   hideAfter: TimeInterval? = nil){
+        if !message.isEmpty {
+            DispatchQueue.main.async {
+                ToastView.showToast(message: message, in: parentView)
+//                ToastView.showToast(message: message, in: parentView, backgroundColor: backgroundColor, textColor: textColor, font: font, hideAfter: hideAfter)
+                
+            }
+        }
+    }
+}
 
