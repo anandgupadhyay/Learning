@@ -1,3 +1,17 @@
+// Security Settigns for Text Field
+class CustomTextField: UITextField {
+    override func canPerformAction(_ action: Selector, withSender sender: Any?) -> Bool {
+        if action == #selector(UIResponder.paste(_:)) {
+            return false // Disable paste
+        }
+        return super.canPerformAction(action, withSender: sender)
+    }
+}
+
+// In your view controller:
+let textField = CustomTextField()
+textField.textContentType = .password // Example: Setting content type for privacy
+
 ForEach(0 ..‹ 6) { item in
 
 Circle ()
