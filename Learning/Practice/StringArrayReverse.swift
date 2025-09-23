@@ -34,3 +34,8 @@ for item in array {
 }
 
 print(typeDictionary)
+
+
+👉 Given an array of strings, transform it into a new array:
+Input → ["a", "b", "c"]
+Output → ["c-0", "b-1", "a-2"]
