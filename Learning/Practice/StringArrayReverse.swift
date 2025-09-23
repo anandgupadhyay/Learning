@@ -39,3 +39,9 @@ print(typeDictionary)
 👉 Given an array of strings, transform it into a new array:
 Input → ["a", "b", "c"]
 Output → ["c-0", "b-1", "a-2"]
+
+//Solution
+let input = ["a", "b", "c"]
+let output = input.reversed().enumerated().map { "\($1)-\($0)" }
+print(output) // ["c-0", "b-1", "a-2"]
+
