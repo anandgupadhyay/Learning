@@ -1,0 +1,25 @@
+import UserNotifications
+
+// Assume you have a notification scheduled with this identifier
+let notificationIdentifier = "myUniqueNotification"
+
+// 1. Create new content for the updated notification
+let newContent = UNMutableNotificationContent()
+newContent.title = "Updated Notification Title"
+newContent.body = "This is the updated message content."
+newContent.sound = UNNotificationSound.default
+
+// 2. Create a new trigger (e.g., for a later time)
+let newTrigger = UNTimeIntervalNotificationTrigger(timeInterval: 60, repeats: false) // Fire in 60 seconds
+
+// 3. Create a new UNNotificationRequest with the SAME identifier
+let newRequest = UNNotificationRequest(identifier: notificationIdentifier, content: newContent, trigger: newTrigger)
+
+// 4. Add the new request, which will replace the old one
+UNUserNotificationCenter.current().add(newRequest) { error in
+    if let error = error {
+        print("Error scheduling updated notification: \(error.localizedDescription)")
+    } else {
+        print("Notification with identifier \(notificationIdentifier) successfully updated.")
+    }
+}
