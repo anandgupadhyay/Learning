@@ -23,3 +23,19 @@ UNUserNotificationCenter.current().add(newRequest) { error in
         print("Notification with identifier \(notificationIdentifier) successfully updated.")
     }
 }
+
+
+//Update Notificaiton 
+    let content = UNMutableNotificationContent()
+    content.title = "Updated Title"
+    content.body = "This is the updated notification body."
+    // ... other content properties
+
+    let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 1, repeats: false) // Or your desired trigger
+    let request = UNNotificationRequest(identifier: "your_notification_identifier", content: content, trigger: trigger)
+
+    UNUserNotificationCenter.current().add(request) { error in
+        if let error = error {
+            print("Error scheduling updated notification: \(error.localizedDescription)")
+        }
+    }
