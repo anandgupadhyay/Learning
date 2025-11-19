@@ -74,3 +74,15 @@ class demo{
     }
 }
 
+
+//rethrow use with example
+enum OperationError: Error {
+    case failed
+}
+
+func logOperation(_ operation: () throws -> Void) rethrows {
+    print("Starting operation...")
+    try operation() // Calls the throwing closure parameter
+    print("Operation finished.")
+}
+ 
