@@ -85,4 +85,13 @@ func logOperation(_ operation: () throws -> Void) rethrows {
     try operation() // Calls the throwing closure parameter
     print("Operation finished.")
 }
- 
+
+//Using with a non-throwing closure:
+//No try is required because the closure doesn't throw. 
+
+let nonThrowingOperation = {
+    print("Performing safe work")
+}
+
+logOperation(nonThrowingOperation) // Works fine, no try needed
+
