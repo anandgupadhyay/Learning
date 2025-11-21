@@ -95,3 +95,18 @@ let nonThrowingOperation = {
 
 logOperation(nonThrowingOperation) // Works fine, no try needed
 
+
+Using with a throwing closure:
+The compiler requires try (or do-catch) because the closure can throw. 
+
+let throwingOperation = {
+    print("Performing risky work")
+    throw OperationError.failed // This closure can throw
+}
+
+do {
+    try logOperation(throwingOperation) // 'try' is required by the compiler
+} catch {
+    print("Caught an error: \(error)")
+}
+
