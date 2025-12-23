@@ -96,6 +96,9 @@ let nonThrowingOperation = {
 logOperation(nonThrowingOperation) // Works fine, no try needed
 
 
+
+
+
 Using with a throwing closure:
 The compiler requires try (or do-catch) because the closure can throw. 
 
