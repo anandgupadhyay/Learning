@@ -1,5 +1,26 @@
 import UIKit
+/* 
+Simple Document Opening Option
+class DocumentShareManager: NSObject, UIDocumentInteractionControllerDelegate {
+    var documentController: UIDocumentInteractionController?
 
+    func promptToOpenDocument(fileURL: URL, in view: UIView) {
+        documentController = UIDocumentInteractionController(url: fileURL)
+        documentController?.delegate = self
+        
+        let success = documentController?.presentOpenInMenu(from: view.bounds, in: view, animated: true)
+        
+        if success == false {
+            print("No app found to open this document.")
+        }
+    }
+    
+    // Required delegate method for proper presentation on iPad / iPhone
+    func documentInteractionControllerViewControllerForPreview(_ controller: UIDocumentInteractionController) -> UIViewController {
+        return UIApplication.shared.keyWindow?.rootViewController ?? UIViewController()
+    }
+}
+*/
 class RestrictedDocOpener {
     
     // Struct to map target apps
