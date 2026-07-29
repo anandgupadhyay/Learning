@@ -20,7 +20,30 @@ class DocumentShareManager: NSObject, UIDocumentInteractionControllerDelegate {
         return UIApplication.shared.keyWindow?.rootViewController ?? UIViewController()
     }
 }
+
+To restrict document sharing exclusively to Microsoft, Google, and Apple apps, you cannot use UIDocumentInteractionController. 
+iOS does not natively allow you to filter or remove third-party apps from the standard system "Open In" menu. 
+Instead, you must build a custom UIAlertController action sheet. 
+Your app will manually check which approved apps are installed on the user's device using their specific URL Schemes. 
+If an app is installed, you show it as an option, copy the document to a shared space, and pass it to that app.
+
+Step 1: Update your Info.plistiOS blocks queries to other apps unless they are explicitly whitelisted. 
+Add the LSApplicationQueriesSchemes key to your Info.plist file
+
+xml<key>LSApplicationQueriesSchemes</key>
+<array>
+    <!-- Microsoft Apps -->
+    <string>ms-powerpoint</string>
+    <string>ms-excel</string>
+    <!-- Google Apps -->
+    <string>googledocs</string>
+    <string>googlesheets</string>
+    <!-- Apple Apps -->
+    <string>pages</string>
+    <string>numbers</string>
+</array>
 */
+
 class RestrictedDocOpener {
     
     // Struct to map target apps
