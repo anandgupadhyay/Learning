@@ -1,5 +1,7 @@
-//By introducing a PaymentMethod protocol, you make the system open for extension but closed for modification. 
-//You can add infinite payment methods without ever touching PaymentProcessor again.
+/*
+By introducing a PaymentMethod protocol, you make the system open for extension but closed for modification. 
+You can add infinite payment methods without ever touching PaymentProcessor again.
+*/
 
 // 1. Create a stable abstraction
 protocol PaymentMethod {
