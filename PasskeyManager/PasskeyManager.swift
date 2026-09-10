@@ -1,6 +1,22 @@
 import Foundation
 import AuthenticationServices
 
+/*Essential PrerequisitesTo make this code work without crash errors, 
+you must fulfill these infrastructure tasks:Associated Domains: In Xcode under Signing & Capabilities, 
+add the Associated Domains capability. Set it to webcredentials:yourdomain.com.Server Configuration: 
+You must host an apple-app-site-association (AASA) file at your server's root domain (https://yourdomain.com). 
+It must contain a reference to your app's bundle ID:
+
+{
+  "webcredentials": {
+    "apps": [ "ABC123XYZ.com.yourcompany.appname" ]
+  }
+}
+
+*/
+
+
+
 /// A thread-safe coordinator that manages Passkey authentication flows.
 class PasskeyManager: NSObject {
     
